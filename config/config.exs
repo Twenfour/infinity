@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :hydra, Hydra.Endpoint,
+config :Infinity, Infinity.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "OWzCUPEVivNXdXqk0wxd8as/Lv//gDm5LY4/mjpxMwrE0prngR17C/rf9Usbv6qb",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Hydra.PubSub,
+  pubsub: [name: Infinity.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
