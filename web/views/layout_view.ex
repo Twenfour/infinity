@@ -1,3 +1,3 @@
-defmodule Hydra.LayoutView do
-  use Hydra.Web, :view
+defmodule Infinity.LayoutView do
+  use Infinity.Web, :view
 end

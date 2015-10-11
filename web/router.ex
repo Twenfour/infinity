@@ -1,5 +1,5 @@
-defmodule Hydra.Router do
-  use Hydra.Web, :router
+defmodule Infinity.Router do
+  use Infinity.Web, :router
 
   # dispatch to the browser stack
   pipeline :browser do
@@ -15,7 +15,7 @@ defmodule Hydra.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Hydra do
+  scope "/", Infinity do
     pipe_through :browser # Use the default browser stack
 
     # all pages here will be rendered by the browser stack
@@ -31,7 +31,7 @@ defmodule Hydra.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Hydra do
+  # scope "/api", Infinity do
   #   pipe_through :api
   # end
 end

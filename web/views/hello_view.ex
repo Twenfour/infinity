@@ -1,3 +1,3 @@
-defmodule  Hydra.HelloView do
-    use Hydra.Web, :view
+defmodule  Infinity.HelloView do
+    use Infinity.Web, :view
 end

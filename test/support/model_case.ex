@@ -1,4 +1,4 @@
-defmodule Hydra.ModelCase do
+defmodule Infinity.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,16 +16,16 @@ defmodule Hydra.ModelCase do
 
   using do
     quote do
-      alias Hydra.Repo
+      alias Infinity.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
-      import Hydra.ModelCase
+      import Infinity.ModelCase
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Hydra.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Infinity.Repo, [])
     end
 
     :ok

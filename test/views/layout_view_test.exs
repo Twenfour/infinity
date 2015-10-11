@@ -1,3 +1,3 @@
-defmodule Hydra.LayoutViewTest do
-  use Hydra.ConnCase, async: true
+defmodule Infinity.LayoutViewTest do
+  use Infinity.ConnCase, async: true
 end

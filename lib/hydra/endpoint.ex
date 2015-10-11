@@ -1,14 +1,14 @@
-defmodule Hydra.Endpoint do
-  use Phoenix.Endpoint, otp_app: :hydra
+defmodule Infinity.Endpoint do
+  use Phoenix.Endpoint, otp_app: :Infinity
 
-  socket "/socket", Hydra.UserSocket
+  socket "/socket", Infinity.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :hydra, gzip: false,
+    at: "/", from: :Infinity, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,8 +32,8 @@ defmodule Hydra.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_hydra_key",
+    key: "_Infinity_key",
     signing_salt: "/ms+5mhl"
 
-  plug Hydra.Router
+  plug Infinity.Router
 end

@@ -1,5 +1,5 @@
-defmodule Hydra.HelloController do
-    use Hydra.Web, :controller
+defmodule Infinity.HelloController do
+    use Infinity.Web, :controller
 
     def index(conn, _params) do
         # find index.html.eex and render it
