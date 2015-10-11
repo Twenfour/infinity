@@ -1,4 +1,4 @@
-# Hydra
+# Infinity
 
 To start your Phoenix app:
 
