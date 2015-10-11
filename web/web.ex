@@ -1,12 +1,12 @@
-defmodule Hydra.Web do
+defmodule Infinity.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Hydra.Web, :controller
-      use Hydra.Web, :view
+      use Infinity.Web, :controller
+      use Infinity.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -27,11 +27,11 @@ defmodule Hydra.Web do
     quote do
       use Phoenix.Controller
 
-      alias Hydra.Repo
+      alias Infinity.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Hydra.Router.Helpers
+      import Infinity.Router.Helpers
     end
   end
 
@@ -45,7 +45,7 @@ defmodule Hydra.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Hydra.Router.Helpers
+      import Infinity.Router.Helpers
     end
   end
 
@@ -59,7 +59,7 @@ defmodule Hydra.Web do
     quote do
       use Phoenix.Channel
 
-      alias Hydra.Repo
+      alias Infinity.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 

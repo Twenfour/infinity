@@ -1,5 +1,5 @@
-defmodule Hydra.ErrorView do
-  use Hydra.Web, :view
+defmodule Infinity.ErrorView do
+  use Infinity.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

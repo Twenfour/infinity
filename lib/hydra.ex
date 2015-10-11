@@ -1,4 +1,4 @@
-defmodule Hydra do
+defmodule Infinity do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -8,23 +8,23 @@ defmodule Hydra do
 
     children = [
       # Start the endpoint when the application starts
-      supervisor(Hydra.Endpoint, []),
+      supervisor(Infinity.Endpoint, []),
       # Start the Ecto repository
-      worker(Hydra.Repo, []),
+      worker(Infinity.Repo, []),
       # Here you could define other workers and supervisors as children
-      # worker(Hydra.Worker, [arg1, arg2, arg3]),
+      # worker(Infinity.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Hydra.Supervisor]
+    opts = [strategy: :one_for_one, name: Infinity.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    Hydra.Endpoint.config_change(changed, removed)
+    Infinity.Endpoint.config_change(changed, removed)
     :ok
   end
 end

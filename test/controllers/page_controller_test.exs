@@ -1,5 +1,5 @@
-defmodule Hydra.PageControllerTest do
-  use Hydra.ConnCase
+defmodule Infinity.PageControllerTest do
+  use Infinity.ConnCase
 
   test "GET /" do
     conn = get conn(), "/"

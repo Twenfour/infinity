@@ -1,5 +1,9 @@
 # Infinity
 
+## Install
+
+NOTE : this project run only on mac os , required [`brew`](http://brew.sh)
+
 To start your Phoenix app:
 
   1. Install dependencies with `mix deps.get`

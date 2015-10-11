@@ -1,4 +1,4 @@
-defmodule Hydra.ConnCase do
+defmodule Infinity.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,20 +20,20 @@ defmodule Hydra.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias Hydra.Repo
+      alias Infinity.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
 
-      import Hydra.Router.Helpers
+      import Infinity.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint Hydra.Endpoint
+      @endpoint Infinity.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Hydra.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Infinity.Repo, [])
     end
 
     :ok
