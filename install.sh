@@ -16,8 +16,8 @@ mix deps.update
 # install the package manager npm (node package manager) and node
 brew install npm
 
-# install the actuall npm dependencie
-npm install 
+# install the actuall npm dependencies
+npm install
 
 # starts aplications and their servers
 mix pheonix.server

@@ -12,6 +12,7 @@
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
 import "deps/phoenix_html/web/static/js/phoenix_html"
+//import "web/static/js/HelloDiv"
 
 // Import local files
 //
@@ -19,3 +20,10 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+var React       = require("react");
+var HelloDiv    = require("./components/HelloDiv.js")
+
+React.render(
+    <HelloDiv />,
+    document.getElementById("helloDiv")
+)
