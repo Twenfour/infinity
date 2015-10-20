@@ -22,6 +22,7 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // import socket from "./socket"
 
 import React from "web/static/bower_components/react/react"
+//import ReactDOM from "web/static/bower_components/react/react-dom"  !!!!!!
 import ReactDOM from "web/static/bower_components/react/react"
 import HelloDiv from "web/static/js/components/HelloDiv"
 

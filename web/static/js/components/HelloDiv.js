@@ -1,4 +1,4 @@
-import React from "web/static/bower_components/react/react";
+import React from "web/static/bower_components/react/react"
 
 export default React.createClass({
     render: function() {
