@@ -20,10 +20,13 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
-var React       = require("react");
-var HelloDiv    = require("./components/HelloDiv.js")
 
-React.render(
-    <HelloDiv />,
+import React from "web/static/bower_components/react/react"
+import ReactDOM from "web/static/bower_components/react/react"
+import HelloDiv from "web/static/js/components/HelloDiv"
+
+
+ReactDOM.render(
+    <HelloDiv/>,
     document.getElementById("helloDiv")
 )

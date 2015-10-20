@@ -2,7 +2,13 @@ exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
-      joinTo: "js/app.js"
+      joinTo: "js/app.js",
+      order: {
+        before: [
+          /^bower_components/,
+          /^web\/static\/vendor/
+        ]
+      }
 
       // To use a separate vendor.js bundle, specify two files path
       // https://github.com/brunch/brunch/blob/stable/docs/config.md#files
@@ -56,7 +62,6 @@ exports.config = {
       ignore: [/web\/static\/vendor/]
     }
   },
-
   modules: {
     autoRequire: {
       "js/app.js": ["web/static/js/app"]
@@ -64,6 +69,8 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: false
   }
+
+
 };
