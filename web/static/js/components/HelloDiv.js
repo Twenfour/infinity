@@ -1,6 +1,6 @@
-var React = require("react")
+import React from "web/static/bower_components/react/react";
 
-var HelloDiv = React.createClass({
+export default React.createClass({
     render: function() {
         return (
             <div className="jumbotron">
@@ -8,6 +8,4 @@ var HelloDiv = React.createClass({
             </div>
         )
     }
-})
-
-module.exports = HelloDiv
+});

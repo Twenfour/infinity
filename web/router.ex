@@ -21,7 +21,7 @@ defmodule Infinity.Router do
     # all pages here will be rendered by the browser stack
     get "/", PageController, :index
     get "/hello", HelloController, :index
-    get "/hi", HelloController, :helloWorld
+    get "/react", ReactController, :index
     #  Phoenix will take whatever value that appears in that position in the url and pass a Dict with the key messenger pointing to that value to the controller.
     get "/hello/:messenger", HelloController, :show
     resources "/users", UserController
