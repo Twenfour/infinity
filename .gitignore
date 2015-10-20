@@ -10,6 +10,10 @@ erl_crash.dump
 # Static artifacts
 /node_modules
 
+#installed by bower
+/bower_components
+/web/static/bower_components
+
 # Since we are building assets from web/static,
 # we ignore priv/static. You may want to comment
 # this depending on your deployment strategy.
