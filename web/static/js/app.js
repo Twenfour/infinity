@@ -23,14 +23,14 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 import React from "web/static/bower_components/react/react"
 
 // TODO:
-// importing from react-dom gives error. Change to line below when you fix this.
+// issue #9
+// importing from react-dom gives error.
 // import ReactDOM from "web/static/bower_components/react/react-dom"
-import ReactDOM from "web/static/bower_components/react/react"
 
 import HelloDiv from "web/static/js/components/HelloDiv"
 
 
-ReactDOM.render(
+React.render(
     <HelloDiv/>,
     document.getElementById("helloDiv")
 )
