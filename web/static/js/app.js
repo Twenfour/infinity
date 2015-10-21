@@ -12,7 +12,6 @@
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
 import "deps/phoenix_html/web/static/js/phoenix_html"
-//import "web/static/js/HelloDiv"
 
 // Import local files
 //
@@ -22,8 +21,12 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // import socket from "./socket"
 
 import React from "web/static/bower_components/react/react"
-//import ReactDOM from "web/static/bower_components/react/react-dom"  !!!!!!
+
+// TODO:
+// importing from react-dom gives error. Change to line below when you fix this.
+// import ReactDOM from "web/static/bower_components/react/react-dom"
 import ReactDOM from "web/static/bower_components/react/react"
+
 import HelloDiv from "web/static/js/components/HelloDiv"
 
 
